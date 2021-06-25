@@ -7,6 +7,7 @@ const assertEqual = function(actual, expected) {
   }
 };
 
+/* THIS ALSO WORKS
 const findKeyByValue = function (obj, value) {
   
   let result = '';
@@ -23,9 +24,24 @@ const findKeyByValue = function (obj, value) {
   
   return result;
 };
+*/
+
+const findKeyByValue = function (obj, value) {
+  
+  if (!Object.values(obj).includes(value)) {
+    return undefined;
+  }
+
+  for (let key of Object.keys(obj)) {
+    if (obj[key] === value) {
+      return key;
+    }
+  }
+};
 
 /* THIS ALSO WORKS
- 
+const findKeyByValue = function (obj, value) {
+
   let result = '';
   
   if (!Object.values(obj).includes(value)) {
