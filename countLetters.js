@@ -69,3 +69,5 @@ assertEqual(countLetters("lighthouse in the house").u, 2);
 assertEqual(countLetters("lighthouse in the house").s, 2);
 assertEqual(countLetters("lighthouse in the house").e, 3);
 assertEqual(countLetters("lighthouse in the house").n, 1);
+
+module.exports = countLetters;
