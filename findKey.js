@@ -77,3 +77,5 @@ assertEqual(
     "Akelarre":  { stars: 3 }
   }, x => x.stars === 12), // => "noma"
   undefined);
+
+  module.exports = findKey;
